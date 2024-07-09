@@ -178,7 +178,7 @@ class FusionNet(nn.Module):
 
         rs = self.backbone(rs)  # ResNet's backbone!
         output = self.conv3(rs)  # Bsx8x64x64
-        output = self.relu(output) # 自己加的
+        output = self.relu(output) # PSDip add this term
 
         return output  # lms + outs
     
