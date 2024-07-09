@@ -1,3 +1,7 @@
+##############################################################################
+# This is also a copy from https://sites.google.com/site/vivonegemine/code
+##############################################################################
+
 import numpy as np
 import torch
 import torch.nn as nn
