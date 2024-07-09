@@ -11,11 +11,11 @@ download benchmark WV2, WV3, QB datasets from [PanCollection](https://liangjiand
 Please also change the data dir in PSDip.py and PSDip_f.py.
 
 ## Run the code
-Please run ``PSDip.py -sensor <sensor>`` for reduced resolution experiments.
+Please run ``python3 PSDip.py -sensor <sensor>`` for reduced resolution experiments.
 
-run ``PSDip_f.py`` for full resolution experiments.
+run ``python3 PSDip_f.py`` for full resolution experiments.
 
-e.g. ``PSDip.py -sensor WV2``
+e.g. ``python3 PSDip.py -sensor WV2``
 
 The restored HRMS image will be directly saved in 'results/..' files. 
 
