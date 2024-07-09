@@ -13,3 +13,10 @@ Please run ``PSDip.py -sensor <sensor>`` for reduced resolution experiments.
 
 run ``PSDip_f.py`` for full resolution experiments.
 
+e.g. ``PSDip.py -sensor WV2``
+
+The restored HRMS image will be directly saved in 'results/..' files. 
+
+## Connections
+<a href="mailto:xyrui.aca@gmail.com">xyrui.aca@gmail.com</a> 
+
