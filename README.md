@@ -11,5 +11,5 @@ download benchmark WV2, WV3, QB datasets from [PanCollection](https://liangjiand
 ## Run the code
 Please run ``PSDip.py -sensor <sensor>`` for reduced resolution experiments.
 
-       run ``PSDip_f.py`` for full resolution experiments.
+run ``PSDip_f.py`` for full resolution experiments.
 
