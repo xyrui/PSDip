@@ -1,6 +1,6 @@
 # Variational Zero-shot Multispectral Pansharpening
 
-[arxiv]()
+[arxiv](https://arxiv.org/pdf/2407.06633)
 
 ## Dataset
 download benchmark WV2, WV3, QB datasets from [PanCollection](https://liangjiandeng.github.io/PanCollection.html) to your local files.
