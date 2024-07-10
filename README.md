@@ -5,7 +5,7 @@
 <img src="./imgs/m.png" align="center"> 
 
 ## Dataset
-download benchmark WV2, WV3, QB **testing** datasets from [PanCollection](https://liangjiandeng.github.io/PanCollection.html) to your local files.
+download benchmark WV2, WV3, QB **testing** datasets from [PanCollection](https://liangjiandeng.github.io/PanCollection.html) to your local files. (NO training data is required)
 
 * .mat format could be used to directly run the code.
 * .hd format is also available. Then, please change the data load way in PSDip.py and PSDip_f.py.
