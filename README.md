@@ -4,11 +4,9 @@
 
 <img src="./imgs/main.png" align="center">
 
-
-<center>
-Flowchat of the proposed PSDip.
-</center>
-
+<div align="center">
+Flowchat of the proposed PSDip. 
+</div>
 
 ## Dataset
 download benchmark WV2, WV3, QB datasets from [PanCollection](https://liangjiandeng.github.io/PanCollection.html) to your local files.
