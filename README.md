@@ -5,7 +5,7 @@
 <img src="./imgs/main.png" align="center">
 
 <div align="center">
-Flowchat of the proposed PSDip. Both the coefficient $\mathcal{G}$
+Flowchat of the proposed PSDip. Both the coefficient$G$
 </div>
 
 ## Dataset
