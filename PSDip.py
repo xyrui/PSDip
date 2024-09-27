@@ -36,6 +36,24 @@ class Param(nn.Module):
     def forward(self,):
         return self.X
 
+# We find that nn.functional.pad with "replicate" mode could bring stochastic gradient values (still do not know the reason).
+def mypadRepli(x, pd): 
+    s1,s2,s3,s4 = x.shape
+    y = torch.zeros((s1,s2,s3+2*pd,s4+2*pd)).to(x.device).type(x.dtype)
+    y[:,:,:pd,:pd] = x[:,:, :1,:1]
+    y[:,:,:pd,pd:pd+s4] = x[:,:, :1, :]
+    y[:,:,:pd,pd+s4:] = x[:,:, :1, -1:]
+    
+    y[:,:,pd:pd+s3,:pd] = x[:,:, :, :1]
+    y[:,:,pd:pd+s3,pd:pd+s4] = x
+    y[:,:,pd:pd+s3,pd+s4:] = x[:,:, :, -1:]
+
+    y[:,:,pd+s3:,:pd] = x[:,:, -1:, :1]
+    y[:,:,pd+s3:,pd:pd+s4] = x[:,:, -1:, :]
+    y[:,:,pd+s3:,pd+s4:] = x[:,:, -1:, -1:]
+    
+    return y
+
 device = torch.device("cuda")
 
 sensor = args.sensor
@@ -106,7 +124,7 @@ for dindex in range(20):
     ks = h.shape[-1]
     pd = int((ks - 1)/2)
     # blur operator
-    blur = Compose([partial(nF.pad, pad=(pd,pd,pd,pd), mode="replicate") ,partial(nF.conv2d, weight=h, groups=ch)]) 
+    blur = Compose([partial(mypadRepli, pd = pd), partial(nF.conv2d, weight=h, groups=ch)]) 
 
     s0 = 2
     # downsample operator
