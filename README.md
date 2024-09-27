@@ -10,7 +10,7 @@ download benchmark WV2, WV3, QB **testing** datasets from [PanCollection](https:
 * .mat format could be used to directly run the code.
 * .hd format is also available. Then, please change the data load way in PSDip.py and PSDip_f.py.
 
-Please also change the data dir in line 69 in PSDip.py or line 67 in PSDip_f.py.
+Please also change the data dir in line 89 in PSDip.py or line 86 in PSDip_f.py.
 
 ## Run the code
 Please run ``python3 PSDip.py -sensor <sensor> -init`` for reduced resolution experiments.
