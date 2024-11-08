@@ -8,6 +8,8 @@
 
 [arxiv](https://arxiv.org/pdf/2407.06633)
 
+* very easy to implement
+  
 <img src="./imgs/m.png" align="center"> 
 
 ## Dataset
