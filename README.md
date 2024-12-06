@@ -1,7 +1,7 @@
 # Variational Zero-shot Multispectral Pansharpening (IEEE TGRS 2024)
 
 <p align="center">
-    Xiangyu Rui, <a href="https://github.com/xiangyongcao">Xiangyong Cao</a>, Yining Li, <a href="https://gr.xjtu.edu.cn/web/dymeng">Deyu Meng</a>
+    Xiangyu Rui, <a href="https://github.com/xiangyongcao">Xiangyong Cao</a>, <a href="https://github.com/YiningLi-ai">Yining Li</a>, <a href="https://gr.xjtu.edu.cn/web/dymeng">Deyu Meng</a>
 </p>
 
 <p align="center">
