@@ -6,7 +6,7 @@
 
 <p align="center">
 
-[arxiv](https://arxiv.org/pdf/2407.06633)
+[Paper](https://ieeexplore.ieee.org/document/10744593)
 
 **very easy to implement**
   
