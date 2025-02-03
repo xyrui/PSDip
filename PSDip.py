@@ -196,7 +196,7 @@ for dindex in range(20):
     optG = Adam(Gnet.parameters(), lr = 1e-3)
     lam = args.lam
 
-    # iterative updating
+    # alternative minimization
     for i in range(3000): 
         Gnet.train()
 
